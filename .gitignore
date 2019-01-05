@@ -1,0 +1,13 @@
+*.ifb
+*.ifl
+*.ifs
+.DS_Store
+.classpath
+.project
+.idea/
+.settings/
+.svn/
+InstaFram.iml
+config.ifc
+bin/
+out/
