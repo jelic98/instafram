@@ -31,7 +31,7 @@ InstaFram is an installation framework that allows their users to create custom 
 * The work environment of the tool is presented through the graphical user interface (GUI)
 * The successful use of the tool does not require the purchase or development of additional hardware components
 
-# 3. Concepts
+# 3. Terms
 
 * Flexible installation - an installation that adjusts to another product by changing the parameters
 * Framework (framework) - a conceptual structure that serves as a support for making something that extends its structure into something useful
