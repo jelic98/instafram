@@ -46,7 +46,6 @@ public class Strings {
     public String ERROR_CANNOT_WRITE;
     public String ERROR_INITIALIZE_FAILED;
     public String ERROR_ACTIVATION_FAILED;
-    public String ERROR_LICENSE_REQUIRED;
     public String ERROR_CREDENTIALS_REQUIRED;
     public String ERROR_LOGIN_FAILED;
     public String ERROR_CANNOT_UNDO;

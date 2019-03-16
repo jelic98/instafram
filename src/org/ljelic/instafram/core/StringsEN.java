@@ -47,7 +47,6 @@ class StringsEN extends Strings {
         super.ERROR_CANNOT_WRITE = "Cannot write to specified destination";
         super.ERROR_INITIALIZE_FAILED = "Cannot initialize paths";
         super.ERROR_ACTIVATION_FAILED = "License activation failed";
-        super.ERROR_LICENSE_REQUIRED = "License code is required";
         super.ERROR_CREDENTIALS_REQUIRED = "Credentials are required";
         super.ERROR_LOGIN_FAILED = "Login failed";
         super.ERROR_CANNOT_UNDO = "Action cannot be undone";

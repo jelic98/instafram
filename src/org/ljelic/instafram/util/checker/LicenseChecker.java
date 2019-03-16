@@ -25,8 +25,7 @@ public class LicenseChecker implements CheckerListener {
         String code = DialogAdapter.input(new Input(Res.STRINGS.INPUT_LICENSE_TITLE, Res.STRINGS.INPUT_LICENSE_MESSAGE));
 
         if(code == null || code.isEmpty()) {
-            onError(Res.STRINGS.ERROR_LICENSE_REQUIRED);
-            return;
+            System.exit(0);
         }
 
         activator.activate(code);
