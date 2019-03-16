@@ -11,12 +11,13 @@ import java.util.TreeSet;
 
 public class SwingNode implements MutableTreeNode, Node {
 
-    private String name, icon;
+    private String name;
+    private byte[] icon;
     private Set<Node> children;
     private Node parent;
     private Node model;
 
-    public SwingNode(String name, String icon) {
+    public SwingNode(String name, byte[] icon) {
         this.name = name;
         this.icon = icon;
     }
@@ -33,7 +34,7 @@ public class SwingNode implements MutableTreeNode, Node {
     }
 
     @Override
-    public String getIcon() {
+    public byte[] getIcon() {
         return icon;
     }
 
@@ -43,7 +44,7 @@ public class SwingNode implements MutableTreeNode, Node {
     }
 
     @Override
-    public void setIcon(String icon) {
+    public void setIcon(byte[] icon) {
         this.icon = icon;
     }
 

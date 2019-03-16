@@ -6,16 +6,12 @@ import org.ljelic.instafram.util.error.ThreadErrorListener;
 import org.ljelic.instafram.util.checker.CheckerAdapter;
 import org.ljelic.instafram.util.checker.LicenseChecker;
 import org.ljelic.instafram.util.checker.SessionChecker;
-import org.ljelic.instafram.view.component.FileChooser;
-import org.ljelic.instafram.view.frame.InstallationFrame;
 import org.ljelic.instafram.view.frame.LoginFrame;
 import org.ljelic.instafram.view.frame.MainFrame;
 import org.ljelic.instafram.view.frame.PreInstallationFrame;
 
-import java.io.File;
-
 /**
- * @author Lazar Jelic - ljelic17@raf.rs
+ * @author Lazar Jelic - ljelic2718rn@raf.rs
  * <p>
  * Activation code: TESTCODE
  * Username: admin

@@ -8,9 +8,9 @@ public interface Node extends Serializable, Comparable<Node> {
     long serialVersionUID = 1L;
 
     String getName();
-    String getIcon();
+    byte[] getIcon();
     void setName(String name);
-    void setIcon(String icon);
+    void setIcon(byte[] icon);
     boolean addChild(Node node);
     void removeChildren();
     boolean hasChildren();

@@ -40,8 +40,10 @@ public class SwingFrame extends JFrame implements Frame {
     }
 
     @Override
-    public void setIcon(String icon) {
-        setIconImage(new ImageIcon(icon).getImage());
+    public void setIcon(byte[] icon) {
+        if(icon != null) {
+            setIconImage(new ImageIcon(icon).getImage());
+        }
     }
 
     @Override

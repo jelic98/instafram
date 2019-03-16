@@ -3,7 +3,7 @@ package org.ljelic.instafram.view.adapter.action;
 public class BarItem {
 
     private final String text;
-    private String icon;
+    private byte[] icon;
     private char mnemonic;
 
     BarItem(String text) {
@@ -15,12 +15,12 @@ public class BarItem {
         this.mnemonic = mnemonic;
     }
 
-    protected BarItem(String text, String icon) {
+    protected BarItem(String text, byte[] icon) {
         this.text = text;
         this.icon = icon;
     }
 
-    BarItem(String text, String icon, char mnemonic) {
+    BarItem(String text, byte[] icon, char mnemonic) {
         this.text = text;
         this.icon = icon;
         this.mnemonic = mnemonic;
@@ -30,7 +30,7 @@ public class BarItem {
         return text;
     }
 
-    public String getIcon() {
+    public byte[] getIcon() {
         return icon;
     }
 

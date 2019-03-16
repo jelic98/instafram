@@ -25,7 +25,7 @@ public class SwingTabPanel extends JTabbedPane implements TabPanel {
     }
 
     @Override
-    public void add(String title, String icon, ScrollPanel panel) {
+    public void add(String title, byte[] icon, ScrollPanel panel) {
         addTab(title + " ", new ImageIcon(icon), (SwingScrollPanel) panel);
     }
 

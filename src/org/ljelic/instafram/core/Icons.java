@@ -1,36 +1,50 @@
 package org.ljelic.instafram.core;
 
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 public class Icons {
 
-    public final String APP = getClass().getResource("/res/app.png").getPath();
-    public final String NEW = getClass().getResource("/res/new.png").getPath();
-    public final String OPEN = getClass().getResource("/res/open.png").getPath();
-    public final String SAVE = getClass().getResource("/res/save.png").getPath();
-    public final String SAVE_AS = getClass().getResource("/res/save_as.png").getPath();
-    public final String EXIT = getClass().getResource("/res/exit.png").getPath();
-    public final String UNDO = getClass().getResource("/res/undo.png").getPath();
-    public final String REDO = getClass().getResource("/res/redo.png").getPath();
-    public final String CUT = getClass().getResource("/res/cut.png").getPath();
-    public final String COPY = getClass().getResource("/res/copy.png").getPath();
-    public final String PASTE = getClass().getResource("/res/paste.png").getPath();
-    public final String OFFLINE = getClass().getResource("/res/offline.png").getPath();
-    public final String ONLINE = getClass().getResource("/res/online.png").getPath();
-    public final String ABOUT = getClass().getResource("/res/about.png").getPath();
-    public final String COMPANY = getClass().getResource("/res/company.png").getPath();
-    public final String PRODUCT = getClass().getResource("/res/product.png").getPath();
-    public final String MODULE = getClass().getResource("/res/module.png").getPath();
-    public final String PARAMETER = getClass().getResource("/res/parameter.png").getPath();
-    public final String ERROR = getClass().getResource("/res/error.png").getPath();
-    public final String INFO = getClass().getResource("/res/info.png").getPath();
-    public final String QUESTION = getClass().getResource("/res/question.png").getPath();
-    public final String LOGOUT = getClass().getResource("/res/logout.png").getPath();
-    public final String RUN = getClass().getResource("/res/run.png").getPath();
-    public final String BUILD = getClass().getResource("/res/build.png").getPath();
+    public final byte[] APP = getResource("/res/app.png");
+    public final byte[] NEW = getResource("/res/new.png");
+    public final byte[] OPEN = getResource("/res/open.png");
+    public final byte[] SAVE = getResource("/res/save.png");
+    public final byte[] SAVE_AS = getResource("/res/save_as.png");
+    public final byte[] EXIT = getResource("/res/exit.png");
+    public final byte[] UNDO = getResource("/res/undo.png");
+    public final byte[] REDO = getResource("/res/redo.png");
+    public final byte[] CUT = getResource("/res/cut.png");
+    public final byte[] COPY = getResource("/res/copy.png");
+    public final byte[] PASTE = getResource("/res/paste.png");
+    public final byte[] OFFLINE = getResource("/res/offline.png");
+    public final byte[] ONLINE = getResource("/res/online.png");
+    public final byte[] ABOUT = getResource("/res/about.png");
+    public final byte[] COMPANY = getResource("/res/company.png");
+    public final byte[] PRODUCT = getResource("/res/product.png");
+    public final byte[] MODULE = getResource("/res/module.png");
+    public final byte[] PARAMETER = getResource("/res/parameter.png");
+    public final byte[] ERROR = getResource("/res/error.png");
+    public final byte[] INFO = getResource("/res/info.png");
+    public final byte[] QUESTION = getResource("/res/question.png");
+    public final byte[] LOGOUT = getResource("/res/logout.png");
+    public final byte[] RUN = getResource("/res/run.png");
+    public final byte[] BUILD = getResource("/res/build.png");
 
-    public final String IMAGE_DEFAULT = getClass().getResource("/res/no_photo.png").getPath();
-    public final String IMAGE_AUTHOR = getClass().getResource("/res/author.png").getPath();
+    public final byte[] IMAGE_DEFAULT = getResource("/res/no_photo.png");
+    public final byte[] IMAGE_AUTHOR = getResource("/res/author.png");
 
-    Icons() {
-        System.out.println("1: " + getClass().getResource("/res/app.png").getPath());
+    private byte[] getResource(String path) {
+        byte[] res;
+
+        try {
+            InputStream is = getClass().getResourceAsStream(path);
+            res = new byte[is.available()];
+            new DataInputStream(is).readFully(res);
+        }catch(IOException e) {
+            res = new byte[0];
+        }
+
+        return res;
     }
 }

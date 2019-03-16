@@ -39,7 +39,9 @@ public class SwingButton extends JButton implements Button {
     }
 
     @Override
-    public void setIcon(String icon) {
-        setIcon(new ImageIcon(icon));
+    public void setIcon(byte[] icon) {
+        if(icon != null) {
+            setIcon(new ImageIcon(icon));
+        }
     }
 }

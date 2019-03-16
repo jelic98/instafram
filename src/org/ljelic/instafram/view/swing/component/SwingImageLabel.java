@@ -10,12 +10,12 @@ public class SwingImageLabel extends JPanel implements ImageLabel {
 
     private Image image;
 
-    public SwingImageLabel(String path) throws IOException {
-        if(path != null && !new File(path).exists()) {
-            throw new IOException("Image at path " + path + " does not exist");
+    public SwingImageLabel(byte[] bytes) throws IOException {
+        if(bytes == null || bytes.length == 0) {
+            throw new IOException("Image does not exist");
         }
 
-        image = new ImageIcon(path).getImage();
+        image = new ImageIcon(bytes).getImage();
 
         setSize(image.getWidth(null), image.getHeight(null));
         repaint();

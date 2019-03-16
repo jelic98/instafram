@@ -14,7 +14,7 @@ public abstract class AbstractModel implements Node, ChangeObservable<AbstractMo
     private String content, prefix;
     private transient ChangeObservableDelegate<Node> delegate;
 
-    AbstractModel(String name, String icon) {
+    AbstractModel(String name, byte[] icon) {
         node = Config.UI.getNode(name, icon);
 
         setDelegateModel(this);
@@ -136,12 +136,12 @@ public abstract class AbstractModel implements Node, ChangeObservable<AbstractMo
     }
 
     @Override
-    public String getIcon() {
+    public byte[] getIcon() {
         return node.getIcon();
     }
 
     @Override
-    public void setIcon(String icon) {
+    public void setIcon(byte[] icon) {
         node.setIcon(icon);
     }
 

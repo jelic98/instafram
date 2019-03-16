@@ -4,9 +4,7 @@ import org.ljelic.instafram.core.Config;
 import org.ljelic.instafram.core.Res;
 import org.ljelic.instafram.observer.ChangeType;
 import org.ljelic.instafram.view.component.Node;
-
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -122,6 +120,10 @@ public class Parameter extends AbstractModel {
     }
 
     public String getPath() {
+        if(value == null) {
+            return null;
+        }
+
         Path path = Paths.get(value);
 
         try {

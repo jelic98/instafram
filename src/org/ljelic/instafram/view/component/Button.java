@@ -6,6 +6,6 @@ public interface Button extends Component, ChangeObservable<Object> {
 
     void setText(String text);
     void setHint(String hint);
-    void setIcon(String icon);
+    void setIcon(byte[] icon);
     void setEnabled(boolean enabled);
 }

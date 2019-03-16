@@ -15,11 +15,11 @@ public final class CompositeActionItem extends ActionItem {
         super(text, mnemonic, action);
     }
 
-    public CompositeActionItem(String text, String icon, Command action) {
+    public CompositeActionItem(String text, byte[] icon, Command action) {
         super(text, icon, action);
     }
 
-    public CompositeActionItem(String text, String icon, char mnemonic, Command action) {
+    public CompositeActionItem(String text, byte[] icon, char mnemonic, Command action) {
         super(text, icon, mnemonic, action);
     }
 

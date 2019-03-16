@@ -9,7 +9,7 @@ public abstract class AbstractUI {
     public abstract Panel getPanel();
     public abstract ScrollPanel getScrollPanel();
     public abstract SplitPanel getSplitPanel();
-    public abstract ImageLabel getImageLabel(String path) throws IOException;
+    public abstract ImageLabel getImageLabel(byte[] bytes) throws IOException;
     public abstract TabPanel getTabPanel();
     public abstract Button getButton();
     public abstract TextField getTextField();
@@ -22,7 +22,7 @@ public abstract class AbstractUI {
     public abstract MenuItem getMenuItem();
     public abstract Menu getMenu();
     public abstract PopupMenu getPopupMenu();
-    public abstract Node getNode(String name, String icon);
+    public abstract Node getNode(String name, byte[] icon);
     public abstract Tree getTree();
     public abstract Frame getFrame();
     public abstract Dialog getDialog();

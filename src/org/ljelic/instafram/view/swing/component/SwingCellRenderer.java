@@ -12,7 +12,13 @@ class SwingCellRenderer extends DefaultTreeCellRenderer {
     public Component getTreeCellRendererComponent(JTree tree, Object item, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus) {
         super.getTreeCellRendererComponent(tree, item, sel, expanded, leaf, row, hasFocus);
 
-        setIcon(new ImageIcon(((Node) item).getIcon()));
+        byte[] icon = ((Node) item).getIcon();
+
+        if(icon != null) {
+            setIcon(new ImageIcon(icon));
+        }else {
+            setIcon(new ImageIcon(""));
+        }
 
         return this;
     }

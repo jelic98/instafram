@@ -50,8 +50,8 @@ public class SwingUI extends AbstractUI {
     }
 
     @Override
-    public ImageLabel getImageLabel(String path) throws IOException {
-        return new SwingImageLabel(path);
+    public ImageLabel getImageLabel(byte[] bytes) throws IOException {
+        return new SwingImageLabel(bytes);
     }
 
     @Override
@@ -115,7 +115,7 @@ public class SwingUI extends AbstractUI {
     }
 
     @Override
-    public Node getNode(String name, String icon) {
+    public Node getNode(String name, byte[] icon) {
         return new SwingNode(name, icon);
     }
 

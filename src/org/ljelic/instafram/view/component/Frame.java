@@ -5,7 +5,7 @@ import org.ljelic.instafram.observer.ChangeObservable;
 public interface Frame extends ChangeObservable<Object> {
 
     void setTitle(String title);
-    void setIcon(String icon);
+    void setIcon(byte[] icon);
     void setSize(int width, int height);
     void setResizable(boolean resizable);
     void setVisible(boolean visible);

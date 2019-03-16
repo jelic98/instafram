@@ -16,12 +16,12 @@ public class ActionItem extends BarItem {
         this.action = action;
     }
 
-    public ActionItem(String text, String icon, Command action) {
+    public ActionItem(String text, byte[] icon, Command action) {
         super(text, icon);
         this.action = action;
     }
 
-    ActionItem(String text, String icon, char mnemonic, Command action) {
+    ActionItem(String text, byte[] icon, char mnemonic, Command action) {
         super(text, icon, mnemonic);
         this.action = action;
     }
