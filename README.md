@@ -1,3 +1,5 @@
+![InstaFram Demo](demo.png)
+
 # 1. Overview
 
 ## 1.1. Problem
