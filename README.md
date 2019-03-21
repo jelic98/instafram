@@ -38,5 +38,7 @@ InstaFram is an installation framework that allows their users to create custom 
 * Localization - customizing a product or service to meet the needs of a specific language or culture
 
 # 4. PowerDesigner models
-[Requirement Mode]().
-[Object Oriented Model]().
+
+[Requirement Mode](https://github.com/jelic98/instafram/blob/master/RequirementsModel.rqm)
+
+[Object Oriented Model](https://github.com/jelic98/instafram/blob/master/ObjectOrientedModel.oom)
