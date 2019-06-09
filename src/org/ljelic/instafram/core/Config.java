@@ -63,12 +63,12 @@ public class Config {
     public static final String DEFAULT_NODE_CONTENT = "No content";
     public static final String DEFAULT_PARAMETER_VALUE = "No value";
 
-    // See all reported errors at https://ecloga.org/projects/software_admin/report_show.php
-    public static final String REPORT_API_URL = "https://ecloga.org/projects/software_admin/report_add.php";
+    // See all reported errors at https://lazarjelic.com/ecloga/projects/software_admin/report_show.php
+    public static final String REPORT_API_URL = "https://lazarjelic.com/ecloga/projects/software_admin/report_add.php";
     public static final String REPORT_API_KEY = "INSTAFRAM2018RAF";
 
-    public static final String ACTIVATION_URL = "https://ecloga.org/projects/software_admin/license_activate.php";
-    public static final String LOGIN_URL = "https://ecloga.org/projects/software_admin/user_login.php";
-    public static final String SESSION_URL = "https://ecloga.org/projects/software_admin/user_session.php";
-    public static final String HELP_URL = "https://ecloga.org/projects/software_admin/help.php";
+    public static final String ACTIVATION_URL = "https://lazarjelic.com/ecloga/projects/software_admin/license_activate.php";
+    public static final String LOGIN_URL = "https://lazarjelic.com/ecloga/projects/software_admin/user_login.php";
+    public static final String SESSION_URL = "https://lazarjelic.com/ecloga/projects/software_admin/user_session.php";
+    public static final String HELP_URL = "https://lazarjelic.com/ecloga/projects/software_admin/help.php";
 }

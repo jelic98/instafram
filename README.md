@@ -39,6 +39,6 @@ InstaFram is an installation framework that allows their users to create custom 
 
 # 4. PowerDesigner models
 
-[Requirement Model](https://github.com/jelic98/instafram/blob/master/RequirementsModel.rqm)
+[Requirement Model](https://github.com/jelic98/instafram/blob/master/models/RequirementsModel.rqm)
 
-[Object Oriented Model](https://github.com/jelic98/instafram/blob/master/ObjectOrientedModel.oom)
+[Object Oriented Model](https://github.com/jelic98/instafram/blob/master/models/ObjectOrientedModel.oom)
